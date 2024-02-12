@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@600&f[]=gambetta@501&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="mainDivHeader">
+            <img class="logoHeader" src="Img/Logo boite de nuit.png" alt="Image logo boîte de nuit">
+            <div class="secondDivHeader">
+                <a href="page d'acceuil.html" id="linkanimation">Accueil</a>
+                <a href="Evenemnts.html" id="linkanimation">Evenements</a>
+                <a href="Artiste.html" id="linkanimation">Artiste</a>
+                <a href="Reservation.html" id="linkanimation">Reservation</a>
+            </div>
+        </div>
+    </header>
+
+    <article>
+        <div class="divReservation">
+            <h2 class="titleReservation"><b><u>FORMULAIRE:</u></b></h2>
+            <label for="name"><b><u>Nom et prénom:</u></b></label>
+            <input type="text" id="name" name="name" required minlength="4" size="10" /><br>
+            <label for="name"><b><u>informations supplémentaires utiles:</u></b></label>
+            <input type="text" id="text" name="informations" required minlength="4" size="30" /><br>
+            <label for="email"><b><u>entre ton email:</u></b></label>
+            <input type="email" id="email" pattern=".+@example\.com" size="30" required /><br>
+            <label for="start">Date de réservation:</label>
+            <input type="date" id="start" name="reservation" />
+            <input class="buttonSend" type="submit" value="Envoyer le formulaire de réservation" />
+        </div>
+    </article>
+
+    <footer>
+        <div class="divFooter">
+            <H4>COMMUN / Boîte de nuit</H4>
+            <h4>Paris / Lille / Marseille</h4>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+
+</body>
+
+</html>

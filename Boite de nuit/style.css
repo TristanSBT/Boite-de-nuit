@@ -1,0 +1,240 @@
+body {
+  margin: 0;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Gambetta', serif;
+  font-size: 27px;
+}
+
+
+
+/* Le même header pour toutes les pages */
+
+.logoHeader {
+  width: 275px;
+  display: block;
+  margin: auto;
+  margin-top: -50px;
+  margin-bottom: -30px;
+}
+
+.mainDivHeader {
+  display: flex;
+  flex-direction: column;
+}
+
+.secondDivHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: #ffffff;
+  font-family: 'Clash Grotesk', sans-serif;
+  font-size: 20px;
+  padding-bottom: 60px;
+}
+
+
+
+/* Le même footer pour toutes les pages */
+
+.divFooter{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 20px;
+  padding-top: 30px;
+}
+
+
+
+/* CSS de la page d'acceuil */
+
+.divTextAcceuil{
+  padding-left: 30px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.titleAcceuil {
+  font-family: 'Clash Grotesk', sans-serif;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.imgAccueil {
+  width: 500px;
+}
+
+.divImageAceeuil {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 60px;
+}
+
+.divImageAceeuil .imgAccueil{
+  z-index: 10;
+}
+
+.divImageAccueilSecond{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 60px;
+  height: 100px;
+}
+
+.divButtonAcceuil{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  padding-bottom: 60px;
+  font-family: 'Clash Grotesk', sans-serif;
+}
+
+
+/*CSS de la page Evenement*/
+
+.titleEvent{
+  font-family: 'Clash Grotesk', sans-serif;
+}
+
+.mainDivEvent{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+
+.secondDivEvent{
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+}
+
+.thirdDivEvent{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-top: 20px;
+  text-align: right;
+}
+
+.fourthDivEvent{
+  display: flex;
+  flex-direction: column;
+  padding-right: 30px;
+}
+
+.imgEvent{
+  width: 700px;
+}
+
+
+
+
+/*CSS de la pge Artiste*/
+
+.mainTitleArtiste{
+  font-family: 'Clash Grotesk', sans-serif;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.mainDivArtist{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 130px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+
+.secondDivArtist{
+  padding-left: 60px;
+}
+
+
+/*style CSS reservation*/
+
+.divReservation{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.buttonSend{
+  margin-top: 50px;
+  font-size: 15px;
+}
+
+
+/*style bouton JS à la fin de la page d'acceuil*/
+
+.divButtonGreen{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Animation pour le Header */
+
+#linkanimation {
+  text-decoration: none;
+  text-decoration-color: none;
+  color: #ffffff;
+  position: relative;
+}
+
+#linkanimation::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff;
+  transform: scale(1, 1);
+  transition: background-color .5s ease-in-out;
+  bottom: 0px;
+}
+
+#linkanimation:active{
+  color: blue;
+}
+
+#linkanimation:hover::before {
+  animation: link ease 1s 1 300ms;
+  transform-origin: right;
+}
+
+@keyframes link {
+  50% {
+    transform: scaleX(0);
+  }
+
+  50.1% {
+    transform: translateX(-100%) scalex(-0.01);
+  }
+
+  100% {
+    transform: translateX(-100%) scalex(-1);
+  }
+}
